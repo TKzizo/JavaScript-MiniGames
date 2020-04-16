@@ -1,0 +1,17 @@
+body{
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+h3 {
+    z-index: 1px;
+    color: palevioletred;
+}
+
+.grid{
+    z-index: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    height:300px ;
+    width: 400px;
+}

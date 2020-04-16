@@ -1,0 +1,25 @@
+body{
+    margin-left: 30%;
+    margin-right: 30%;
+    
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    border: solid;
+    border-color: black;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.mole {
+    background-image: url('images/frog.gif');
+    background-size: cover;
+}
