@@ -1,0 +1,29 @@
+body{
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    width: 602px;
+    height:602px;
+    background-color: black;
+}
+
+.grid div{
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    
+  
+}
+
+.PlayerX{
+    background-image: url('X.png');
+}
+
+.PlayerO{
+    background-image: url('O.png');
+}
