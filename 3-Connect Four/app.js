@@ -10,19 +10,21 @@ document.addEventListener('DOMContentLoaded', () => {
         (function (index){
             squares[i].onclick = function() {
                 //if square below is taken you can take it 6*7 grid
-                if (squares[index + 7].classList.contains('taken')){
+                if (squares[index + 7].classList.contains('taken') && !squares[index].classList.contains('taken')){
                     if(Player === 1 ){
                     squares[index].classList.add('taken')
                     squares[index].classList.add('player-one')
                     //changer-player
                     Player = 2 
                     displayPlayer.innerHTML = Player
+                    checkboard()
                     }else if (Player === 2 ){
                         squares[index].classList.add('taken')
                         squares[index].classList.add('player-two')
 
                         Player = 1
                         displayPlayer.innerHTML = Player
+                        checkboard()
                     }
                  }else alert("can't go there...")
                 } 
@@ -61,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } 
         }
      }
-     squares.forEach(square => square.addEventListener('click', checkboard) )
+     
     
  })
 
